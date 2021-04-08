@@ -3,7 +3,7 @@ class PrototypesController < ApplicationController
   before_action :move_to_index, only: :edit
 
   def index
-    @prototype = Prototype.all
+    @prototypes = Prototype.all
   end
 
   def new
