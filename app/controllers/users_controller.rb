@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(current_user.id)
+    @user = User.find(params[:id])
     @prototype = Prototype.new
     @prototypes = @user.prototypes.includes(:user)
   end
